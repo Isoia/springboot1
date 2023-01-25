@@ -27,3 +27,7 @@ Assertions.assertThat(findMember).isEqualTo(member); Assertions는 테스트케�
 
 @Enumerated(EnumType.STRING), jpa에서 enum을 사용할때 enum필드에 @Enumerated 어노테이션을 적어준다, 그리고 Enumerated의 기본속성은 ordinal인데 enum의 값을 1,2,3 이런 숫자로 비교하기에 직접 속성을 EnumType.String으로 지정해줘야 1,2,3이 아닌 enum필드 이름 그대로 컬럼으로 가져가서 비교할 수 있다.
 
+모든 연관관계는 지연로딩으로 설정! XXXToOne 같은 경우는 기본값이 즉시로딩이기 떄문에 옵션값(@ManyToOne(fetch= FetchType.LAZY))을 줘야함(XXXToMany는 기본값이 지연로딩)
+
+* 단축기 shift + ctrl + F 특정 단어가 검색된 클래스 공간 찾기
+
