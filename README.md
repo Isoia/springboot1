@@ -57,3 +57,4 @@ public class ItemRepository {
 }
 RequiredArgsConstructor가 final인 변수에 자동으로 값을 대입시켜줌 그로인해 @PersitenceContext로 주입시켜줄 필요가 없다.
 
+엔티티를 개발할때 생성메소드, 비즈니스 로직을 구분하여 만드는것이 효율적으로 짜는것이니 실무에서도 이렇게 사용하자!
